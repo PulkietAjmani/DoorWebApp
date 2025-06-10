@@ -1,0 +1,93 @@
+
+
+
+.defaulttxt{
+    padding-top: 200px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30;
+}
+
+.status {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px 10px; /* Adjust padding to reduce the white space */
+    max-width: 300px; /* Adjust the width to make it narrower */
+    border-radius: 50px; /* Keeps the rounded corners */
+    margin: 0 auto; /* Centers the container if it's in a flex or block layout */
+    font-size: 50;
+    text-align: center;
+    font-weight: bold;
+    border-width: 10;
+    border-color:  #ffffff;
+    
+}
+
+.title {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px ; /* Adjust padding to reduce the white space */
+    border-radius: 50px; /* Keeps the rounded corners */
+    margin: 0 auto; /* Centers the container if it's in a flex or block layout */
+    font-size: 50;
+    text-align: center;
+    font-weight: bold;
+    border-width: 10;
+    border-color:  #ffffff;
+    
+    
+}
+
+
+
+.boxgap{
+    padding-top: 20px ;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+
+
+.statusWord {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 0px 20px; /* Adjust padding to reduce the white space */
+    max-width: 250px; /* Adjust the width to make it narrower */
+    max-height: 150px;
+    border-radius: 20px; /* Keeps the rounded corners */
+    margin: 0 auto; /* Centers the container if it's in a flex or block layout */
+    font-size: 50;
+    text-align: center;
+    font-weight: bold;
+
+    
+}
+
+.rainbow-box {
+    background-color: #101313;
+    color: white;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    height: 50px;
+    margin: 20px auto;
+    width: 200px;
+  }
+
+  .rainbow-boxlg {
+    background-color: #101313;
+    color: white;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    height: 100px;
+    margin: 10px auto;
+    width: 500px;
+    font-size: 30;
+    
+  }

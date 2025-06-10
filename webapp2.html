@@ -1,0 +1,76 @@
+<head>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOCKCHECKER</title>
+	<script src="script.js" defer></script>
+	<<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body class="bg-black">
+    
+    <div id="app">
+        
+       <div class="max-w-3xl mx-auto">
+        
+
+        <div id="Home" v-if="selectedPage == 'Home'">
+
+        <div class="pb-4">
+        <div class="title">
+            <h1 class="text-center font-bold "><span class="font-bold text-6xl" >Door Check</span></h1>
+            <h1 class="font-bold text-2xl text-center font-mono   pb-4   ">"Your home isn't a motel, lets keep it that way"</h1>
+        </div>
+        </div>
+
+        <div class="status">
+
+            <h2 class="container, boxgap ">
+                <div class="statusWord">DOOR STATUS</div>
+            </h2>
+            
+            <h3 class="boxgap" >
+                <div class="status"> 
+                    <div id="LOCK"  v-if="status == 'LOCKED'"   class = "text-red-500"> LOCKED</div>   
+                    <div id="OPEN" v-if="status == 'OPEN'" class = "text-green-500"> OPEN</div>      
+                   
+                </div>
+            </h3>
+
+        </div>
+        
+        <div class="grid grid-cols-2  gap-3 px-3 mt-[50px]" >
+
+            <button class="rainbow-box" @click="flipper()"> KEY </button>
+            <button class="rainbow-box" @click="selectedPage = 'FAQpg1' "> FAQ </button> 
+            
+        </div>
+        </div>
+        </div>
+        
+        <div id="FAQpg1" v-if= "selectedPage == 'FAQpg1'" >
+            <div class="pt-[200px] text-center font-bold text-5xl pb-[50px] text-white ">Click a question</div>
+            <div class="grid grid-cols-2 gap-3 px-3 mt-6">
+                <button  @click="pgchanger('WhyLock')" class="rainbow-boxlg">Why is my cock being locked?</button>
+                <button @click="pgchanger('Stuck')" class="rainbow-boxlg">Why wont it unlock anymore?</button>
+            </div>
+        </div>
+        <div id="Stuck" v-if="selectedPage == 'Stuck'" class="text-center  font-bold text-8xl">
+                <div class="defaulttxt"> Oops! XD GL </div>
+                <div class="pt-32">
+                <button @click="pgchanger('Home')" class="rainbow-boxlg">HOME</button>
+                </div>
+        </div>
+        <div id="WhyLock" v-if="selectedPage == 'WhyLock'" class="text-center pt-64 ">
+                <div class="text-white font-bold text-6xl pb-32">Because you've been a naughty boy</div>
+                <button @click="pgchanger('Home')" class="rainbow-boxlg"> Fair Enough </button>
+        </div>
+
+        
+
+    </div>
+
+</body>
+
+ 
+
