@@ -55,12 +55,10 @@ The status (LOCKED / OPEN) updates based on distance data.
 
 📦 Setup
 Clone this repo
-
-bash
-Copy
-Edit
 git clone https://github.com/PulkietAjmani/DoorWebApp.git
+
 cd lock-checker-webapp
+
 Open webapp2.html in your browser.
 
 (Optional) Integrate into your Arduino sketch if using internal web hosting.
